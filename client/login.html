@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h1></h1></a>
+      <ul class="nav nav-pills">
+        <!-- <li class="nav-item">
+          <a class="nav-link">Seaworld</a>
+      </li> -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rides.html">Rides</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link"  href="itinerary.html">Itinerary</a>
+          </li>
+        
+       
+
+    </div>
+</nav>
+
+
+
+
+
+
+<div class="logo"><img src="data:image/jpeg;base64,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" alt=""></div>
+
+
+<hr class="hr">
+    <div class="outside-container">
+
+
+    <div class="main-container">
+        <form action="rides.html" class="form" id="login">
+            <h1 class="form-title">Login</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="inputs">
+              <i class="fa fa-user icon" id="username">Username</i>
+                <input type="text" class="form-input" id="loginUsername" autofocus>
+                
+              
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="inputs">
+              <i class="fa fa-lock icon" id="password">  Password</i>
+                <input type="password" class="form-input" id="loginPassword" autofocus>
+                <div class="form-input-error-message"></div>
+            </div>
+           
+            <button class="form-button" click="rides.html" type="submit">Continue</button>
+            
+            <p class="form-text">
+                <a class="create-link" id="linkCreateAccount">Create an Account</a>
+            </p>
+        </form>
+        <form action="" class="form form-hidden" id="createAccount">
+            <h1 class="form-title">Create Account</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="inputs">
+              <i class="fa fa-user icon" id="username">Username</i>
+                <input type="text" id="signUpUsername" class="form-input" autofocus >
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="inputs">
+              <i class="fa fa-envelope-open icon" id="username">  Email</i>
+                <input type="email" class="form-input" autofocus >
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="inputs">
+              <i class="fa fa-lock icon" id="password">  Password</i>
+                <input type="password" id="signUpPassword" class="form-input" autofocus >
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="inputs">
+              <i class="fa fa-lock icon" id="password">  Confirm Password</i>
+                <input type="password" class="form-input" autofocus >
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a class="create-link" id="linkLogin">Already have an account? Sign In</a>
+            </p>
+        </form>
+    </div>
+    </div>
+    <div class="footer">
+      <hr class="hr">
+      <a href="https://discoverycove.com/orlando/?_ga=2.224239774.480456844.1632313348-27891319.1631901623">
+        <img src="https://seaworld.com/orlando/-/media/shared/images/park-icons/discovery-cove.ashx?version=1_202104275411" alt="Discovery Cove Logo"></a>
+        <a href="https://aquatica.com/">
+          <img src="https://seaworld.com/orlando/-/media/shared/images/park-icons/aquatica1.ashx?version=1_201807101921" alt="Aquatica Logo"></a>
+          <a href="https://seaworld.com/?_ga=2.10128630.274157379.1632422379-32395215.1632422379">
+          <img src="https://seaworld.com/-/media/shared/images/park-icons/seaworld1.ashx?version=1_201704082004" alt="Seaworld Logo"></a>
+        <a href="https://buschgardens.com/?_ga=2.82020437.274157379.1632422379-32395215.1632422379">
+        <img src="https://seaworld.com/-/media/shared/images/park-icons/buschgardens1.ashx?version=1_201704082002" alt="Busch Gardens Logo">
+        </a>
+        <a href="https://adventureisland.com/?webSyncID=261e25c8-7ed9-3a7d-b12a-915bec622749&sessionGUID=9b7adb79-c920-6d27-928c-d76759b6d79c&_ga=2.187040813.480456844.1632313348-27891319.1631901623&_gac=1.191181016.1632331003.Cj0KCQjwqKuKBhCxARIsACf4XuEHPKZH_CIUYbWOcN5mQjAyzvZW2S1X6uGDVhRPQisd7eApl22F9D8aArTkEALw_wcB">
+        <img src="https://seaworld.com/-/media/shared/images/park-icons/adventureisland1.ashx?version=1_201704082001" alt="Adventure Island Logo"></a>
+        <a href="https://buschgardens.com/williamsburg/water-country-usa/?webSyncID=261e25c8-7ed9-3a7d-b12a-915bec622749&sessionGUID=9b7adb79-c920-6d27-928c-d76759b6d79c&_ga=2.87844380.568134877.1632313348-27891319.1631901623&_gac=1.20957898.1632330998.Cj0KCQjwqKuKBhCxARIsACf4XuEHPKZH_CIUYbWOcN5mQjAyzvZW2S1X6uGDVhRPQisd7eApl22F9D8aArTkEALw_wcB">
+        <img src="https://seaworld.com/williamsburg/-/media/shared/images/park-icons/watercountryusa1.ashx?version=1_201704082006" alt="WaterWay USA Logo"></a>
+        <a href="https://sesameplace.com/?webSyncID=261e25c8-7ed9-3a7d-b12a-915bec622749&sessionGUID=9b7adb79-c920-6d27-928c-d76759b6d79c&_ga=2.215993618.480456844.1632313348-27891319.1631901623&_gac=1.81196133.1632331003.Cj0KCQjwqKuKBhCxARIsACf4XuEHPKZH_CIUYbWOcN5mQjAyzvZW2S1X6uGDVhRPQisd7eApl22F9D8aArTkEALw_wcB">
+        <img src="https://seaworld.com/-/media/shared/images/park-icons/sesameplace1.ashx?version=1_201704082005" alt="Sesame Place Logo"></a>
+    </div>
+    
+</body>
+<script src="client.js"></script>
+<script src="https://use.fontawesome.com/433f8c7f6a.js"></script>
+</html>
