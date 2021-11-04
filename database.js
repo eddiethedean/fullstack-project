@@ -12,7 +12,12 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.sendFile("client/login.html")
+    try {
+        res.sendFile("client/login.html");
+    } catch(err){
+        res.send(err)
+    }
+    
 })
 
 
