@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-
+const path = require('path');
 
 
 const creds = require("./db");
@@ -13,9 +13,9 @@ app.use(cors());
 
 app.get("/", (req, res) => {
     try {
-        res.sendFile(__dirname + "/client/login.html");
+        res.sendFile(path.join(__dirname+'/client/login.html'));
     } catch(err){
-        res.send(err)
+        res.send(err);
     }
     
 })
@@ -101,4 +101,6 @@ res.send(err);
     };
     
 });
+
+app.use('/', router);
 app.listen(PORT, console.log(`Listening on port ${PORT}`));
