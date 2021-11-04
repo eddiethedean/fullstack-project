@@ -2,18 +2,17 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const path = require('path');
-const router = express.Router();
 
 const creds = require("./db");
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
     try {
-        res.sendFile(path.join(__dirname+'/client/login.html'));
+        res.sendFile(path.join(__dirname + '/client/login.html'));
     } catch(err){
         res.send(err);
     }
@@ -102,5 +101,5 @@ res.send(err);
     
 });
 
-app.use('/', router);
+app.use( '/client', express.static(path.resolve(__dirname, "client")));
 app.listen(PORT, console.log(`Listening on port ${PORT}`));
