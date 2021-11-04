@@ -13,7 +13,7 @@ app.use(cors());
 
 app.get("/", (req, res) => {
     try {
-        res.sendFile("client/login.html");
+        res.sendFile(__dirname + "/client/login.html");
     } catch(err){
         res.send(err)
     }
